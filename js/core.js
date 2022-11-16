@@ -7,3 +7,6 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   },
 });
+setTimeout(function(){
+  odometer.innerHTML = 276.422;
+}, 1000);

@@ -1,2 +1,47 @@
 @media screen and (min-width: 1280px){
+    header{
+        display: flex;
+        margin: 0px 80px;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+    header h1 a{
+        display: block;
+        width: 120px;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header nav ul li{margin:0px 40px}
+    header nav ul li a{
+        color: #ff4713;
+    }
+    header nav ul li ol > li{
+        display: none;
+    }
+    header > div ul{
+        display: flex;
+    }
+    header > div ul > li:first-child{
+        background-color: #ff4713;
+        border-radius: 20px;
+        font-size: 16px;
+        padding: 9.5px 23px;
+        margin-right: 50px;
+    }
+    
+    header > div ul > li:first-child > a{
+        color: white;
+    }
+
+
+
+
+
 }
