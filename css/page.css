@@ -2,10 +2,11 @@
       .swiper {
         width: 100%;
         height: 100%;
+        position: relative;
       }
       .swiper img{
         width: 100%;
-        height: 100%;
+        height: 90vh;
         object-fit: cover;
       }
       .swiper-slide {
@@ -27,6 +28,111 @@
         -webkit-align-items: center;
         align-items: center;
       }
+      .mouseform{
+        position: absolute;
+        bottom: 50px;
+        left: 49.5%;
+        z-index: 9999;
+      }
+      .mouseform > span{
+        color: white;
+        font-size: 14px;
+      }
+      .mouse{
+        position: relative;
+        margin: 0 auto;
+        width: 20px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 30px 30px 30px 30px;
+      }
+      .mousewheel{
+        position: absolute;
+        left: 48%;
+        top: 4px;
+        width: 2px;
+        height: 5px;
+        background-color: white;
+      }
+      .halfpage{
+        position: relative;
+        display: flex;
+      }
+      .lefthalf img{
+        height: 100vh;
+        width: 50vw;
+      }
+      .lefthalf{
+        position: relative;
+        width: 50%;
+      }
+      .clickbtn{
+        position: absolute;
+        left: 40px;
+        top: 40px;
+      }
+      .clickbtn h2{
+        color: white;
+        font-size: 80px;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+      .clickbtn > ul{
+        display: flex;
+        flex-direction: column;
+      }
+      .clickbtn > ul > li button{
+        color: white;
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      .lefthalf > ul{
+        display: flex;
+      }
+      .lefthalf > ul > li:nth-child(2){
+        position: relative;
+        z-index: 2;
+      }
+      .lefthalf > ul > li:nth-child(2).active{
+        left: -51%;
+      }
+      .lefthalf > ul > li:nth-child(n+3){
+        position: absolute;
+        left: 101%;
+      }
+      .lefthalf > ul > li:nth-child(3){
+        z-index: 1;
+      }
+      .lefthalf > ul > li:nth-child(3).active{
+        z-index: 3;
+        left: 0%;
+      }
+      .lefthalf > ul > li:nth-child(4){
+        z-index: 1;
+      }
+      .lefthalf > ul > li:nth-child(4).active{
+        z-index: 3;
+        left: 0%;
+      }
+      .righthalf > ul > li > img{
+        width: 440px;
+        height: 680px;
+        position: absolute;
+        left: 39%;
+        z-index: 10;
+      }
+
+
+
+
+
+
+
+
 }
 
 
